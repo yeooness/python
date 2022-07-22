@@ -10,14 +10,22 @@ for test_case in range(1, T + 1):
     # S : r 이상이면 1l 당 + s 
     # W : 종민의 한달 수도양 w 리터 
     # P, Q, R, S, W(1 ≤ P, Q, R, S, W ≤ 10000, 자연수) 
-    P, Q, R, S, W = map(int,input().split())
+    P, Q, R, S, W = map(int,input().split()) 
     A = P * W 
-    B = Q
-    if W > R : 
-        B = (W-R) * S
-    if A > B : 
-        print("#%d" % test_case, end=" ")
-        print(B) 
-    else : 
-        print("#%d" % test_case, end=" ")
-        print(A)
+    if R > W : 
+        B = Q
+    else :
+        B = Q + S * (W-R)
+    print(f'#{test_case} {min(A,B)}')
+
+    # A = P * W 
+    # B = Q
+    # if W > R : 
+    #     B = (W-R) * S
+    # if A > B : 
+    #     print("#%d" % test_case, end=" ")
+    #     print(B) 
+    # else : 
+    #     print("#%d" % test_case, end=" ")
+    #     print(A)
+
