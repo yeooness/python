@@ -49,7 +49,7 @@ print(int(input()) -543)
 A,B,C = map(int(),input().split())
 print((A+B)%C, ((A%C) + (B%C))%C,(A*B)%C, ((A%C) * (B%C))%C, sep='\n')
 
-# 13
+
 
 
 
