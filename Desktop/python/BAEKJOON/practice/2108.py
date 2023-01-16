@@ -1,6 +1,5 @@
 import sys
 from collections import Counter
-
 n = int(sys.stdin.readline())
 nums = []
 for i in range(n):
